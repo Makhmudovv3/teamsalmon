@@ -29,6 +29,10 @@
 }
 
 .navbar-classlist a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    color: #fa9696;
+}
+
+.navbar-button button{
+    border: none;
+    padding: 11px 34px;
 }
