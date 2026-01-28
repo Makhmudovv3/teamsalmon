@@ -1,0 +1,125 @@
+.section4-container {
+    padding: 80px 5%;
+}
+
+.section4-container h1 {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.section4-container h5 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -5%;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 72px;
+    padding-top: 26px;
+    text-align: center;
+}
+
+/* Desktopda 3 tadan 2 qator qilish */
+.desktop-grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.mobile-swiper-view {
+    display: none;
+    /* Desktopda sliderni berkitamiz */
+}
+
+/* Kartochka dizayni */
+.section4-card1 {
+    background: linear-gradient(0deg, #0a5240, #12614d);
+    padding: 24px;
+    border-radius: 12px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section4-img {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section4-img img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.section4-text h4 {
+    color: white;
+    margin: 0;
+}
+
+.section4-text h6 {
+    color: #8b8b8b;
+    margin: 0;
+}
+
+.section4-card1 p {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -6%;
+}
+
+.section4-mobile-btn {
+    display: none;
+}
+
+/* Mobil uchun sozlamalar */
+@media (max-width: 950px) {
+    .section4-container h1 {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: -1%;
+    }
+
+    .section4-container h5 {
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+
+    .section4-card1 p {
+        font-size: 16px;
+    }
+
+    .desktop-grid-view {
+        display: none;
+    }
+
+    .mobile-swiper-view {
+        display: block;
+    }
+
+    .section4-mobile-btn {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .section4-mobile-btn button {
+        width: 100%;
+        padding: 15px;
+        background: #10A37F;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+    }
+}
