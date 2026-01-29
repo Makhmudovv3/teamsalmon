@@ -1,12 +1,12 @@
 import React from 'react'
 import "../abdulaziz/Navbar.css"
-import logo from "../../assets/logo.png"
+// import logo from "../../assets/logo.png"
 
 const Navbar = () => {
   return (
     <div className='Navbar-container'>
       <div className='navbar-logo'>
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
       </div>
       <div className='navbar-classlist'>
         <a href="">Главная</a>

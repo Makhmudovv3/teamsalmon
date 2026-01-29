@@ -1,0 +1,46 @@
+
+
+.sec55{
+    color: white;
+font-weight: 700;
+font-style: Bold;
+font-size: 68px;
+text-align: center;
+line-height: 74px;
+letter-spacing: 0%;
+margin-top: 100px;
+margin-bottom: 50px;
+
+}
+.sec5{
+    color: white;
+    justify-content: center;
+    gap: 80px;
+    display: flex;
+}
+.sec56{
+    color: black;
+    background-color: #10A37F;
+    border-radius: 50%;
+}
+.sec5 h2{
+font-weight: 600;
+font-size: 30px;
+line-height: 48px;
+letter-spacing: -4%;
+
+}
+.sec5 h3{
+font-weight: 600;
+font-size: 25px;
+line-height: 48px;
+letter-spacing: -4%;
+
+}
+.sec5 h4{
+font-weight: 600;
+font-size: 25px;
+line-height: -10px;
+letter-spacing: -4%;
+
+}
