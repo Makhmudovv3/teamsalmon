@@ -4,17 +4,23 @@
     justify-content: center;
 }
 
+.section1-text{
+    align-content: center;
+}
+
+
 .section1-text h1 {
     color: white;
     font-family: Manrope;
     font-weight: 800;
     font-style: ExtraBold;
     font-size: 56px;
-    line-height: 80px;
+    line-height: 60px;
     letter-spacing: -1%;
 }
 
 .section1-text p {
+    margin-top: 10px;
     color: #FFFFFF;
     font-family: Manrope;
     font-weight: 500;
@@ -30,6 +36,7 @@
 }
 
 .section1-button {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     gap: 32px;
