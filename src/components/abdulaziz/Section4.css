@@ -24,7 +24,6 @@
     text-align: center;
 }
 
-/* Desktopda 3 tadan 2 qator qilish */
 .desktop-grid-view {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -33,10 +32,8 @@
 
 .mobile-swiper-view {
     display: none;
-    /* Desktopda sliderni berkitamiz */
 }
 
-/* Kartochka dizayni */
 .section4-card1 {
     background: linear-gradient(0deg, #0a5240, #12614d);
     padding: 24px;
@@ -83,7 +80,6 @@
     display: none;
 }
 
-/* Mobil uchun sozlamalar */
 @media (max-width: 950px) {
     .section4-container h1 {
         font-size: 36px;
