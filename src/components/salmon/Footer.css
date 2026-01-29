@@ -1,42 +1,101 @@
+.footer-container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px 10%;
+    font-family: sans-serif;
+}
 
-
-
-.footer{
+.footer-main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2F2E34;
+    padding-bottom: 30px;
     gap: 20px;
-    color: white;
-    align-items: center;
-    border-bottom: 2px solid #2F2E34;
-    margin-bottom: 20px;
-    width: 1170px;
-    margin-left: 110px;
-    padding: 20px;
 }
-.footer h3{
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: -2%;
 
-
-}
-.footer h4{
-font-weight: 600;
-font-size: 20px;
-line-height: 28px;
-letter-spacing: -2%;
-color: rgb(154, 155, 156);
-}
-.footer1{
+.footer-nav {
     display: flex;
-    justify-content: center;
-    gap: 450px;
-    color: white;
-    padding: 50px;
-    align-items: center;
+    gap: 20px;
 }
 
-.sss{
-    margin-left: 50px;
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-contacts {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-contacts h4 {
+    color: #9A9B9C;
+    font-size: 18px;
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    font-size: 14px;
+    color: #9A9B9C;
+    line-height: 1.6;
+}
+
+.legal-text {
+    max-width: 50%;
+}
+
+.copyright-section {
+    text-align: right;
+}
+
+.policy {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 30px 20px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-contacts {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .legal-text {
+        max-width: 100%;
+    }
+
+    .copyright-section {
+        text-align: left;
+    }
 }

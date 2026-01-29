@@ -1,46 +1,104 @@
-
-
-.sec55{
+.section-container {
+    background-color: #1e1e1e;
+    padding: 50px 20px;
     color: white;
-font-weight: 700;
-font-style: Bold;
-font-size: 68px;
-text-align: center;
-line-height: 74px;
-letter-spacing: 0%;
-margin-top: 100px;
-margin-bottom: 50px;
-
 }
-.sec5{
-    color: white;
-    justify-content: center;
-    gap: 80px;
+
+.sec55 {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sec5 {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.sec56{
-    color: black;
+
+.sec5-content {
+    flex: 1;
+}
+
+.sec5-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sec5-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sec5 h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.sec56 {
+    color: #1e1e1e;
     background-color: #10A37F;
     border-radius: 50%;
+    font-size: 28px;
+    flex-shrink: 0;
 }
-.sec5 h2{
-font-weight: 600;
-font-size: 30px;
-line-height: 48px;
-letter-spacing: -4%;
 
+.feature-text h3 {
+    font-size: 20px;
+    margin: 0;
 }
-.sec5 h3{
-font-weight: 600;
-font-size: 25px;
-line-height: 48px;
-letter-spacing: -4%;
 
+.feature-text p {
+    font-size: 18px;
+    color: #b3b3b3;
+    margin: 5px 0 0 0;
 }
-.sec5 h4{
-font-weight: 600;
-font-size: 25px;
-line-height: -10px;
-letter-spacing: -4%;
 
+.doc-link {
+    font-size: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .sec5 {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .sec55 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-top: 20px;
+    }
+
+    .sec5 h2 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    .feature-item {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .sec5-image img {
+        width: 80%;
+    }
 }

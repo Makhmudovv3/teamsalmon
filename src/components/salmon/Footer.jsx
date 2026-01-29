@@ -1,43 +1,51 @@
-import React from 'react'
-import img2 from '../../assets/img2.png'
-import img3 from '../../assets/img3.png'
-import img4 from '../../assets/img4.png'
-import './Footer.css'
+import React from 'react';
+import img2 from '../../assets/img2.png';
+import img3 from '../../assets/img3.png';
+import img4 from '../../assets/img4.png'; 
+import './Footer.css';
+
 const Footer = () => {
   return (
-    <>
-    <div className='footer'>
-      <div>
-        <img src={img2} alt="" />
-      </div>
-      <h3>Что может</h3>
-      <h3>Как работает</h3>
-      <h3>Отзывы</h3>
-      <h3>Тарифы</h3>
-      <h3>Для бизнеса</h3>
-      <h3>Вопросы</h3>
-      <h3>Блог</h3>
-      <h4>hello@chadgpt.ru</h4>
-      <div>
-        <img src={img3} alt="" />
-        
-      </div>
-      <div>
-<img src={img4} alt="" />
-      </div>
-    </div>
+    <footer className="footer-container">
+      <div className='footer-main'>
+        <div className='footer-logo'>
+          <img src={img2} alt="Logo" />
+        </div>
 
-    <div className='footer1'>
-      <div>
-        <p>При использовании сервиса вы соглашаетесь c правилами <br /> использования. Мы не имеем отношения к OpenAI, не <br /> распространяем их ПО. Условия использования Chad.</p>
+        <nav className='footer-nav'>
+          <a href="#">Что может</a>
+          <a href="#">Как работает</a>
+          <a href="#">Отзывы</a>
+          <a href="#">Тарифы</a>
+          <a href="#">Для бизнеса</a>
+          <a href="#">Вопросы</a>
+          <a href="#">Блог</a>
+        </nav>
+
+        <div className='footer-contacts'>
+          <h4>hello@chadgpt.ru</h4>
+          <div className='social-icons'>
+            <img src={img3} alt="VK" />
+            <img src={img4} alt="TG" />
+          </div>
+        </div>
       </div>
-      <div>
-        <p className='sss'>© 2022 — 2023 «Chad»</p>
-        <p>Политика конфиденциальности</p>
+
+      <div className='footer-bottom'>
+        <div className='legal-text'>
+          <p>
+            При использовании сервиса вы соглашаетесь c <u>правилами использования</u>.
+            Мы не имеем отношения к OpenAI, не распространяем их ПО.
+            Условия использования Chad.
+          </p>
+        </div>
+        <div className='copyright-section'>
+          <p>© 2022 — 2023 «Chad»</p>
+          <p className='policy'>Политика конфиденциальности</p>
+        </div>
       </div>
-    </div>
-    </>
-  )
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
