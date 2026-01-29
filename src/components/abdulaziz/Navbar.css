@@ -1,34 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .Navbar-container {
-    padding: 44px 120px;
+    padding: 20px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-logo img {
-    width: 174px;
-    height: 37px;
+    width: 150px;
+    height: auto;
 }
 
 .navbar-classlist {
     display: flex;
-    gap: 42px;
+    align-items: center;
+    gap: 25px;
 }
 
 .navbar-classlist a {
     text-decoration: none;
-    color: white;
-    font-family: Manrope;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -2%;
-    text-align: center;
-    
+    color: #f0f0f0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+}
+.navbar-classlist a:hover{
+    color: #10A37F;
 }
 
-.navbar-classlist a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+.desktop-only button {
+    display: none;
+}
+
+.navbar-button.mobile-only button {
+    border: none;
+    padding: 10px 25px;
+    background: #10A37F;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.menu-icon,
+.menu-close-icon {
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .menu-overlay {
+        display: none !important;
+    }
+
+    .navbar-classlist {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background-color: #171717;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 40px 25px;
+        gap: 0;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 1002;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-classlist.active {
+        right: 0;
+    }
+
+    .menu-close-icon {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .navbar-classlist a {
+        width: 100%;
+        font-size: 17px;
+        padding: 15px 0;
+        color: white;
+    }
+
+    .mobile-only {
+        display: block !important;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .navbar-button.mobile-only button {
+        width: 100%;
+        padding: 15px;
+        background: #10A37F;
+        border: none;
+        border-radius: 8px;
+        color: white;
+    }
 }

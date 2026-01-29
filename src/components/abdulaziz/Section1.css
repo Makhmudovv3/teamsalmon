@@ -1,0 +1,93 @@
+.section1-container {
+    padding: 72px 125px;
+    display: flex;
+    justify-content: center;
+}
+
+.section1-text{
+    align-content: center;
+}
+
+
+.section1-text h1 {
+    color: white;
+    font-family: Manrope;
+    font-weight: 800;
+    font-style: ExtraBold;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1%;
+}
+
+.section1-text p {
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -2%;
+}
+
+.section1-img img {
+    width: 723px;
+    height: 460px;
+}
+
+.section1-button {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.section1-button button {
+    border: none;
+    background-color: #10A37F;
+    border-radius: 8px;
+    padding: 18px 52px;
+    color: white;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+}
+
+.section1-button h4 {
+    color: #FFFFFF;
+    font-family: Manrope;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -4%;
+}
+
+
+@media (max-width: 1024px) {
+    .section1-container {
+        padding: 40px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .section1-text h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .section1-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section1-button {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .section1-button button {
+        width: 100%;
+    }
+}

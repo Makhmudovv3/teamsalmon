@@ -1,4 +1,7 @@
-.Main{
+.appjsx-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #212124;
     height: auto;
 }
